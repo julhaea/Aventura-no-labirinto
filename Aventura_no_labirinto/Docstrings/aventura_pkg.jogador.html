@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module aventura_pkg.jogador</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title"><a href="aventura_pkg.html" class="white">aventura_pkg</a>.jogador</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cpdita016%5Cambiente_labirinto%5Caventura_pkg%5Cjogador.py">c:\users\pdita016\ambiente_labirinto\aventura_pkg\jogador.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="emoji.html">emoji</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-iniciar_jogador"><strong>iniciar_jogador</strong></a>()</dt><dd><span class="code">Inicia&nbsp;o&nbsp;jogador&nbsp;na&nbsp;posição&nbsp;inicial&nbsp;e&nbsp;define&nbsp;a&nbsp;condição&nbsp;de&nbsp;vitória&nbsp;como&nbsp;falsa.<br>
+&nbsp;<br>
+Retorna:<br>
+--------<br>
+tupla:&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Retorna&nbsp;a&nbsp;posição&nbsp;inicial&nbsp;do&nbsp;jogador&nbsp;como&nbsp;uma&nbsp;tupla&nbsp;(x,&nbsp;y)&nbsp;com&nbsp;(0,&nbsp;0).<br>
+bool:&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Retorna&nbsp;False&nbsp;para&nbsp;indicar&nbsp;que&nbsp;o&nbsp;jogador&nbsp;ainda&nbsp;não&nbsp;venceu.</span></dd></dl>
+ <dl><dt><a name="-mover"><strong>mover</strong></a>(posicao_atual, labirinto, tecla)</dt><dd><span class="code">Move&nbsp;o&nbsp;jogador&nbsp;dentro&nbsp;do&nbsp;labirinto&nbsp;baseado&nbsp;na&nbsp;tecla&nbsp;pressionada,&nbsp;se&nbsp;o&nbsp;espaço&nbsp;estiver&nbsp;livre.<br>
+&nbsp;<br>
+Parâmetros:<br>
+posicao_atual:&nbsp;tupla<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;posição&nbsp;atual&nbsp;do&nbsp;jogador&nbsp;no&nbsp;formato&nbsp;(x,&nbsp;y).<br>
+labirinto:&nbsp;lista<br>
+&nbsp;&nbsp;&nbsp;&nbsp;O&nbsp;mapa&nbsp;do&nbsp;labirinto,&nbsp;representado&nbsp;como&nbsp;uma&nbsp;matriz&nbsp;2D&nbsp;de&nbsp;listas.<br>
+tecla:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Recebe&nbsp;'w',&nbsp;'s',&nbsp;'a'&nbsp;ou&nbsp;'d'&nbsp;para&nbsp;indicar&nbsp;respectivamente&nbsp;as&nbsp;teclas&nbsp;para&nbsp;cima,&nbsp;baixo,&nbsp;esquerda&nbsp;ou&nbsp;direita.<br>
+&nbsp;<br>
+Retorna:<br>
+tupla:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;nova&nbsp;posição&nbsp;do&nbsp;jogador&nbsp;após&nbsp;o&nbsp;movimento,&nbsp;no&nbsp;formato&nbsp;(x,&nbsp;y).<br>
+&nbsp;<br>
+Regras:<br>
+-&nbsp;'w':&nbsp;Move&nbsp;para&nbsp;cima,&nbsp;se&nbsp;estiver&nbsp;livre.<br>
+-&nbsp;'s':&nbsp;Move&nbsp;para&nbsp;baixo,&nbsp;se&nbsp;estiver&nbsp;livre.<br>
+-&nbsp;'a':&nbsp;Move&nbsp;para&nbsp;a&nbsp;esquerda,&nbsp;se&nbsp;estiver&nbsp;livre.<br>
+-&nbsp;'d':&nbsp;Move&nbsp;para&nbsp;a&nbsp;direita,&nbsp;se&nbsp;estiver&nbsp;livre.<br>
+-&nbsp;O&nbsp;jogador&nbsp;só&nbsp;pode&nbsp;se&nbsp;mover&nbsp;se&nbsp;o&nbsp;espaço&nbsp;de&nbsp;destino&nbsp;não&nbsp;estiver&nbsp;ocupado&nbsp;por&nbsp;um&nbsp;bloco&nbsp;laranja.</span></dd></dl>
+ <dl><dt><a name="-situar"><strong>situar</strong></a>(jogador_posicao, labirinto)</dt><dd><span class="code">Verifica&nbsp;a&nbsp;condição&nbsp;de&nbsp;vitória&nbsp;do&nbsp;jogador.<br>
+&nbsp;<br>
+Parâmetros:<br>
+jogador_posicao:&nbsp;tupla<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;posição&nbsp;atual&nbsp;do&nbsp;jogador&nbsp;no&nbsp;formato&nbsp;(x,&nbsp;y).<br>
+labirinto:&nbsp;lista<br>
+&nbsp;&nbsp;&nbsp;&nbsp;O&nbsp;mapa&nbsp;do&nbsp;labirinto,&nbsp;em&nbsp;formato&nbsp;de&nbsp;listas.<br>
+&nbsp;<br>
+Retorna:<br>
+bool:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Retorna&nbsp;True&nbsp;se&nbsp;o&nbsp;jogador&nbsp;atingir&nbsp;o&nbsp;bloco&nbsp;verde&nbsp;no&nbsp;final&nbsp;do&nbsp;labirinto,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;indicando&nbsp;que&nbsp;o&nbsp;jogador&nbsp;venceu.&nbsp;Caso&nbsp;contrário,&nbsp;retorna&nbsp;False.</span></dd></dl>
+</td></tr></table>
+</body></html>
