@@ -37,20 +37,18 @@ def mover(posicao_atual, labirinto, tecla):
     - O jogador só pode se mover se o espaço de destino não estiver ocupado por um bloco laranja.
     """
     x, y = posicao_atual
-    if tecla == 'w' and x > 0:
-        if labirinto[x-1][y] != emoji.emojize(":orange_square:"):
+    match tecla:
+        case 'w' if x > 0 and labirinto[x-1][y] != emoji.emojize(":orange_square:"):
             x -= 1
-    elif tecla == 's' and x < len(labirinto) - 1:
-        if labirinto[x+1][y] != emoji.emojize(":orange_square:"):
+        case 's' if x < len(labirinto) - 1 and labirinto[x+1][y] != emoji.emojize(":orange_square:"):
             x += 1
-    elif tecla == 'a' and y > 0:
-        if labirinto[x][y-1] != emoji.emojize(":orange_square:"):
+        case 'a' if y > 0 and labirinto[x][y-1] != emoji.emojize(":orange_square:"):
             y -= 1
-    elif tecla == 'd' and y < len(labirinto[0]) - 1:
-        if labirinto[x][y+1] != emoji.emojize(":orange_square:"):
+        case 'd' if y < len(labirinto[0]) - 1 and labirinto[x][y+1] != emoji.emojize(":orange_square:"):
             y += 1
 
     return (x, y)
+
 
 def situar(jogador_posicao, labirinto):
     """
